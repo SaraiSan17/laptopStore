@@ -62,15 +62,15 @@ var productos=[{
 var pedidos = [];
 
 router.get('/productos/', function(req, res) {
-    res.json(productos);
+     res.status(200).json(productos);
 });
 router.get('/pedidos/', function(req, res) {
-    res.json(pedidos);
-})
+    res.status(200).json(pedidos);
+});
 router.post('/pedidos/', function(req, res) {
     pedidos.push(req.body);
-    res.json({"status":"insertado"});
-})
+	res.status(200).json({"status":"insertado"});
+});
 
 
 
