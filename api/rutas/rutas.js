@@ -1,9 +1,8 @@
 const express=require('express')
-var bodyParser = require('body-parser')
 const router = express.Router();
 
 
-var urlencodedParser = bodyParser.urlencoded({ extended: true });
+
 
 var productos=[{ 
 	"Nombre":"HP PAVILION",
