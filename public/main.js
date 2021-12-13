@@ -10,7 +10,7 @@ if ('serviceWorker' in  navigator) {
         
     })
     navigator.serviceWorker.ready.then((swRegistration)=>{
-        return swRegistration.sync.register('Sicoronizacion');
+        return swRegistration.sync.register('Sincronizacion');
     }).then(function (){
         console.log('Se registro la sincronización');
     }) 
